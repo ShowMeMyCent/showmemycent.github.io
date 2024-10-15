@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        #message {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Surprise Message for You!</h1>
+    <div id="message"></div>
+
+    <script>
+        const messages = [
+            "HALLOOOO SAYANGGGGGG<3",
+            "HAPPY SWEET SEVENTEEN YAAAA",
+            "Semoga kamu panjang umur",
+            "Semoga apa yang kamu cita-citakan bisa tercapai, semoga jadi lebih baik lagi kedepannya, semoga makin banyak rezekinya",
+            "Makin tambah cantik, tapi sekarang juga udah cantik banget sih kalo tambah cantik lagi makin banyak yang deketin nanti",
+            "Semoga kamu ga sering-sering sedih lagi yaaa, jangan suka overthinking biar ga tiba-tiba nangis malem-malem",
+            "Yaa pokoknya yang terbaik buat kamu",
+            "Aku disini mau sekalian bilang makasih ke kamu karna udah sabar ngadepin aku",
+            "Makasih karna kamu mau nerima aku meskipun aku suka bikin kamu kesel, suka jailin kamu, suka bikin kamu bete",
+            "Suka bikin kamu nangis, maafin pacar kamu yang paling ganteng ini yaaaaaaaa",
+            "Kamu jangan suka begadang yaaa sayangg, kamu kan masih sekolah masih SMA hehe berangkatnya harus pagi-pagi",
+            "Jadi bobonya jangan malem terus yaaaa",
+            "Oiyaa kalo aku pas disana jadi susah diajak call maaf yaaa soalnya disini tugas-tugasnya ga kaya di SMA",
+            "Disana tugasnya ribet banget banyak yang aku gangerti pula, udah gitu deadlinenya kadang ada yang cepet banget",
+            "Oiyaaa, kamu sekarang sibuk banget nih semangat yaaa jangan suka telat makan yaa sayang nanti sakit",
+            "Kamu juga jangan suka makan yang pedes-pedes terus kamukan punya GERDDDDD",
+            "Yaa pokoknya makasihh yaaa sayang kamu udah bertahan selama setahun ini sama aku",
+            "Makasih karna kamu udah mau nemenin aku pas aku lagi ada masalah, pas aku lagi pusing ngerjain tugas, pas aku lagi sedih",
+            "Kamu juga selalu bolehin aku kerumah kamu padahal kamu sendiri lagi kecapean",
+            "TIMAKACIIIIIIII YAAAAAAA SAYANGGGGGG",
+            "TIMAKACIIIII TIMAKACIIIII TIMAKACIIIIII",
+            "Ohhh ada lagiii, kamu jangan suka ngambek dong kalo misalkan lagi callan aku sambil main game",
+            "Aku kan sambil main biar akunya ga bosen, aku sambil main bukan berarti aku bosen callan sama kamu kok",
+            "Kan aku pernah bilang kalo callan tuh aku gabisa diem aja, mau dirumah juga aku suka sambil main gitar, main game, buka tiktok, dll",
+            "Kecuali pas aku lagi ga mood ngapa-ngapain baru callan sambil tiduran, kadang malah dengerin kamu cerita bisa bikin aku ketiduran",
+            "Abis enak aja gitu dengerin kamu cerita, tapi ceritanya yang happy-happy kalo yang sedih-sedih aku jadi gabisa tidur",
+            "Soalnya kan aku harus nanggepin cerita kamu juga kalo ceritanya sedih jadi gabisa bobo"
+        ];
+
+        let index = 0;
+        function displayMessage() {
+            if (index < messages.length) {
+                document.getElementById('message').innerText = messages[index];
+                index++;
+                setTimeout(displayMessage, 2000); // Delay of 2 seconds between messages
+            }
+        }
+
+        setTimeout(displayMessage, 2000); // Initial delay before showing the first message
+    </script>
+</body>
+</html>
